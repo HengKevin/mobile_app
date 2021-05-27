@@ -1,0 +1,27 @@
+type InvestmentPla @model @auth(rules: [{allow: public}]) @key(name: "byAccount", fields: ["accountID"]) {
+  id: ID!
+  plan_name: String
+  description: String
+  deposit: Float
+  goal: Float
+  accountID: ID
+}
+
+type User @model {
+  id: ID!
+  firstname: String!
+  lastname: String
+  email: AWSEmail
+  phonenumber: AWSPhone
+  Accounts: [Account] @connection(keyName: "byUser", fields: ["id"])
+  password: String
+}
+
+type Account @model @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  account_type: String!
+  balance: Float
+  userID: ID
+  InvestmentPlas: [InvestmentPla] @connection(keyName: "byAccount", fields: ["id"])
+}
+ 

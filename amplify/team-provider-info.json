@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-split-it-easy-android-master-dev-94846-authRole",
+      "UnauthRoleArn": "arn:aws:iam::029808869854:role/amplify-split-it-easy-android-master-dev-94846-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::029808869854:role/amplify-split-it-easy-android-master-dev-94846-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-split-it-easy-android-master-dev-94846-deployment",
+      "UnauthRoleName": "amplify-split-it-easy-android-master-dev-94846-unauthRole",
+      "StackName": "amplify-split-it-easy-android-master-dev-94846",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:029808869854:stack/amplify-split-it-easy-android-master-dev-94846/e93a3590-b915-11eb-878b-062331791410",
+      "AmplifyAppId": "dmzhr5szwq92v"
+    },
+    "categories": {
+      "auth": {
+        "splititeasyandroidmaster3668fc44": {}
+      }
+    }
+  }
+}
